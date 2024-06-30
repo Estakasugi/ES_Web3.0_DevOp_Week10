@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">this is a survey form challenge</p>
+    <form id="survey-form">
+        <label id="name-label">Name: </label>
+        <input 
+          id="name" 
+          type="text"
+          placeholder="please enter name"
+          required 
+        />
+        <br>
+        <label id="email-label">Email: </label>
+        <input 
+          id="email" 
+          type="email"
+          placeholder="please enter email" 
+          required 
+        />
+        <br>
+        <label id="number-label">Number: </label>
+        <input 
+          id="number"
+          type="number"
+          min="0"
+          max="1000"
+          placeholder="0 - 1000"
+        />
+        <br>
+        <select id="dropdown" name="options">
+                <option value="final-fantasy" selected>Final Fantasy</option>
+                <option value="WOW">WOW</option>
+                <option value="elden-ring">Elden Ring</option>
+        </select>
+        <br>
+        <label id="account-type-explainA">
+        <input
+         id="personal-account"
+         type="radio" 
+         name="account-type" 
+         class="inline" 
+         value="personal" 
+         checked 
+        />Personal</label>
+        <label id="account-type-explainB">
+        <input
+         id="business-account" 
+         type="radio" 
+         name="account-type" 
+         class="inline" 
+         value="business"
+        />Business</label>
+        <br>
+        <label id="checkbox1-expalin">
+        <input
+          id="checkbox1"
+          value="checkboxA"
+          type="checkbox"
+        />The first check box</label>
+        <label id="checkbox2-expalin">
+        <input
+          id="checkbox2"
+          value="checkboxB"
+          type="checkbox"
+        />The second check box</label>
+        <br>
+        <label for="bio">Provide a bio:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        <br>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
